@@ -18,9 +18,9 @@ namespace ConsoleUI
             //}
 
 
-            //foreach (var product in productManager.GetAllByCategoryId(2))
+            //foreach (var product in productmanager.getallbycategoryıd(2))
             //{
-            //    Console.WriteLine(product.ProductName);
+            //    console.writeline(product.productname);
             //}
 
             foreach (var product in productManager.GetByUnitPrice(40,100))
