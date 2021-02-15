@@ -15,7 +15,6 @@ namespace ConsoleUI
 
 
 
-
         }
 
         private static void CategoryTest()
@@ -48,11 +47,24 @@ namespace ConsoleUI
             //    Console.WriteLine(product.ProductName);
             //}
 
-            foreach (var product in productManager.GetProductDetails())
-            {
-                Console.WriteLine(product.ProductName +" / "+ product.CategoryName);
-            }
+            //foreach (var product in productManager.GetProductDetails().Data)
+            //{
+            //    Console.WriteLine(product.ProductName +" / "+ product.CategoryName);
+            //}
 
+
+            var result = productManager.GetProductDetails();
+            if (result.Success==true)
+            {
+                foreach (var product in result.Data)
+                {
+                    Console.WriteLine(product.ProductName + " / " + product.CategoryName);
+                }
+            }
+            else
+            {
+                Console.WriteLine(result.Message);
+            }
         }
     }
 }
