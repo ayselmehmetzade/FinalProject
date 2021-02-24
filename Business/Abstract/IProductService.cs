@@ -20,6 +20,7 @@ namespace Business.Abstract
 
         //void Add(Product product);
         IResult Add(Product product);
+        IResult Update(Product product);
 
         //Product GetById(int productId);
         IDataResult<Product> GetById(int productId);
