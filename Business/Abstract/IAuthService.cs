@@ -3,7 +3,7 @@ using Core.Utilities.Results;
 using Core.Utilities.Security.JWT;
 using Entities.DTOs;
 
-namespace DataAccess.Abstract
+namespace Business.Abstract
 {
     public interface IAuthService
     {
