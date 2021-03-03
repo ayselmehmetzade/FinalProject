@@ -24,6 +24,8 @@ namespace Business.Abstract
 
         //Product GetById(int productId);
         IDataResult<Product> GetById(int productId);
+
+        IResult AddTransactionalTest(Product product);
     }
 }
 
